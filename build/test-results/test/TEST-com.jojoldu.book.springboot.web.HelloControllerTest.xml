@@ -1,95 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jojoldu.book.springboot.web.HelloControllerTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2022-01-23T05:14:38" hostname="DESKTOP-VPI1TQ8" time="0.247">
+<testsuite name="com.jojoldu.book.springboot.web.HelloControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-24T02:30:50" hostname="DESKTOP-VPI1TQ8" time="0.037">
   <properties/>
-  <testcase name="hello가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.173">
-    <failure message="java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:98)
-	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:619)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:195)
-	at com.jojoldu.book.springboot.web.HelloControllerTest.hello가_리턴된다(HelloControllerTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-</failure>
-  </testcase>
-  <testcase name="helloDto가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.074"/>
-  <system-out><![CDATA[14:14:36.106 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.106 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:14:36.122 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:14:36.138 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.jojoldu.book.springboot.web.HelloControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-14:14:36.138 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jojoldu.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
-14:14:36.153 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: class path resource [com/jojoldu/book/springboot/web/HelloControllerTest-context.xml] does not exist
-14:14:36.153 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: class path resource [com/jojoldu/book/springboot/web/HelloControllerTestContext.groovy] does not exist
-14:14:36.153 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:14:36.153 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:14:36.200 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.247 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\freelec-springboot2-webservice\build\classes\java\main\com\jojoldu\book\springboot\Application.class]
-14:14:36.247 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.HelloControllerTest
-14:14:36.247 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.jojoldu.book.springboot.web.HelloControllerTest]: using defaults.
-14:14:36.247 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-14:14:36.263 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c0a94ad, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2121041, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@66283b7f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1f58c016, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57bf90ac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@453d1202, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62e92a19, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3b680e22, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@10f9d313, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3df97e0c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@166b3248, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d8927b9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33360050, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@45490124]
-14:14:36.263 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2b1844b3 testClass = HelloControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@9ddd3f8 testClass = HelloControllerTest, locations = '{}', classes = '{class com.jojoldu.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@4bed5e55, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@aa493026, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@eeaadaed, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@10797bb7, [ImportsContextCustomizer@73567a6a key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2a58d1cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@22f2ed20, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-14:14:36.279 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jojoldu.book.springboot.web.HelloControllerTest]
-14:14:36.279 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2b1844b3 testClass = HelloControllerTest, testInstance = com.jojoldu.book.springboot.web.HelloControllerTest@24a8e693, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@9ddd3f8 testClass = HelloControllerTest, locations = '{}', classes = '{class com.jojoldu.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@4bed5e55, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@aa493026, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@eeaadaed, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@10797bb7, [ImportsContextCustomizer@73567a6a key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2a58d1cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@22f2ed20, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-14:14:36.357 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
+  <testcase name="hello가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.014"/>
+  <testcase name="helloDto가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.023"/>
+  <system-out><![CDATA[2022-01-24 11:30:49.379  INFO 17672 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jojoldu.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
+2022-01-24 11:30:49.379  INFO 17672 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-24 11:30:49.379  INFO 17672 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-24 11:30:49.395  INFO 17672 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.HelloControllerTest
+2022-01-24 11:30:49.395  INFO 17672 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-01-24 11:30:49.395  INFO 17672 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5932c700, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3ba97cb4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dfcde14, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6539dd16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2afc1c76, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ac09941, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2137f073, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@a4d482e, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4018eabd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1ecc696e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e6b6ac, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@600a92a6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6740d118, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1aba4387]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -99,55 +18,19 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-01-23 14:14:36.518  INFO 18252 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on DESKTOP-VPI1TQ8 with PID 18252 (started by cow01 in C:\freelec-springboot2-webservice)
-2022-01-23 14:14:36.534  INFO 18252 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-01-23 14:14:37.492  INFO 18252 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-01-23 14:14:37.555  INFO 18252 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-01-23 14:14:37.775  INFO 18252 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-01-24 11:30:49.411  INFO 17672 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on DESKTOP-VPI1TQ8 with PID 17672 (started by cow01 in C:\freelec-springboot2-webservice)
+2022-01-24 11:30:49.426  INFO 17672 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-01-24 11:30:49.724  INFO 17672 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-24 11:30:49.755  INFO 17672 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-24 11:30:49.918  INFO 17672 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 96c3195a-4eab-4c5a-93cd-c44fa51e70a8
+Using generated security password: beb61c26-429d-4ed7-a406-bde3917da70d
 
-2022-01-23 14:14:37.948  INFO 18252 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11db37c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7845a213, org.springframework.security.web.header.HeaderWriterFilter@4a5de0b0, org.springframework.security.web.csrf.CsrfFilter@9da155d, org.springframework.security.web.authentication.logout.LogoutFilter@760c79ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20177a95, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@61355d7f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57e6c4a7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@545cb689, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15755fd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2556903a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ff28a65, org.springframework.security.web.session.SessionManagementFilter@3effa895, org.springframework.security.web.access.ExceptionTranslationFilter@4538f048, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51450e5f]
-2022-01-23 14:14:37.980  INFO 18252 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-01-23 14:14:37.980  INFO 18252 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-01-23 14:14:37.980  INFO 18252 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2022-01-23 14:14:38.028  INFO 18252 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Started HelloControllerTest in 1.656 seconds (JVM running for 2.426)
-
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /hello
-       Parameters = {}
-          Headers = []
-             Body = <no character encoding set>
-    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = null
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = null
-          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+2022-01-24 11:30:49.996  INFO 17672 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4686bb98, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b9396ac, org.springframework.security.web.header.HeaderWriterFilter@2f0ea53, org.springframework.security.web.csrf.CsrfFilter@76ab089, org.springframework.security.web.authentication.logout.LogoutFilter@7d270105, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f7e6d47, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7168259a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b9ef9f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@79eb1068, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43d7d67f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46f00e24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ad7dabd, org.springframework.security.web.session.SessionManagementFilter@50ccfc7c, org.springframework.security.web.access.ExceptionTranslationFilter@59663958, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f0398b6]
+2022-01-24 11:30:50.011  INFO 17672 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-01-24 11:30:50.011  INFO 17672 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-01-24 11:30:50.011  INFO 17672 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2022-01-24 11:30:50.043  INFO 17672 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Started HelloControllerTest in 0.648 seconds (JVM running for 8.224)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
