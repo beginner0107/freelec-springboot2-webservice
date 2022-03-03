@@ -1,8 +1,12 @@
 # freelec-springboot2-webservice
 <h2>스프링부트와 AWS로 혼자 구현하는 웹 서비스</h2>
+<p>
+
+  
 1. 인텔리제이<br>
 https://programmingbeginner.tistory.com/109?category=1254714
 
+  
 2. 인텔리제이 설정<br>
 https://programmingbeginner.tistory.com/110?category=1254714
 
@@ -26,3 +30,4 @@ https://programmingbeginner.tistory.com/117?category=1254714
 
 9. 머스테치로 화면 구성<br>
 https://programmingbeginner.tistory.com/131?category=1254714
+</p>
